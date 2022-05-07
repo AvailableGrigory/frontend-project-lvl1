@@ -6,4 +6,7 @@
 ![run-linter](https://github.com/AvailableGrigory/frontend-project-lvl1/actions/workflows/run-linter.yml/badge.svg)
 
 Brain-even game example: https://asciinema.org/a/MwvBeLRdOGKlJkXR9wGyQOuT4
+
 Brain-calc game example: https://asciinema.org/a/QUc1JhA9XwE9YYLR8gOaLcoej
+
+Brain-gcd game example: https://asciinema.org/a/wLBirrLuyNaTMGYL0zCMtyk2s
