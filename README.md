@@ -12,3 +12,5 @@ Brain-calc game example: https://asciinema.org/a/QUc1JhA9XwE9YYLR8gOaLcoej
 Brain-gcd game example: https://asciinema.org/a/wLBirrLuyNaTMGYL0zCMtyk2s
 
 Brain-progression game example: https://asciinema.org/a/0h1P5n9qzM86d6oXx7ay1UBzR
+
+Brain-prime game example: https://asciinema.org/a/xbHxushnSelQkqZBJMTUCcySG
