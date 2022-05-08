@@ -1,4 +1,4 @@
-import * as gameLogic from '../index.js';
+import { randomNumberGenerator, newGame } from '../index.js';
 
 const gcd = (firstNumber, secondNumber) => {
   if (firstNumber < secondNumber) {
@@ -12,8 +12,8 @@ const gcd = (firstNumber, secondNumber) => {
 
 const startGame = () => {
   const QA = () => {
-    const firstNumber = Math.floor(Math.random() * 100);
-    const secondNumber = Math.floor(Math.random() * 100);
+    const firstNumber = randomNumberGenerator(0, 101);
+    const secondNumber = randomNumberGenerator(0, 101);
     const question = `${firstNumber} ${secondNumber}`;
     const answer = `${gcd(firstNumber, secondNumber)}`;
 
@@ -22,7 +22,7 @@ const startGame = () => {
 
   const description = 'Find the greatest common divisor of given numbers.';
 
-  gameLogic.newGame(QA, description);
+  newGame(QA, description);
 };
 
 export default startGame;

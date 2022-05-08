@@ -1,8 +1,8 @@
-import * as gameLogic from '../index.js';
+import { randomNumberGenerator, newGame } from '../index.js';
 
 const startGame = () => {
   const QA = () => {
-    const question = Math.floor(Math.random() * 100);
+    const question = randomNumberGenerator(0, 101);
     const answer = question % 2 === 0 ? 'yes' : 'no';
 
     return [question, answer];
@@ -10,7 +10,7 @@ const startGame = () => {
 
   const description = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-  gameLogic.newGame(QA, description);
+  newGame(QA, description);
 };
 
 export default startGame;

@@ -1,6 +1,4 @@
-import * as gameLogic from '../index.js';
-
-const randomNumberGenerator = (min, max) => Math.floor(Math.random() * (max - min)) + min;
+import { randomNumberGenerator, newGame } from '../index.js';
 
 const startGame = () => {
   const QA = () => {
@@ -27,7 +25,7 @@ const startGame = () => {
 
   const description = 'What number is missing in the progression?';
 
-  gameLogic.newGame(QA, description);
+  newGame(QA, description);
 };
 
 export default startGame;

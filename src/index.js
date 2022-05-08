@@ -1,14 +1,16 @@
 import readlineSync from 'readline-sync';
 
-export const getAnswer = () => readlineSync.question('Your answer: ');
+const maxRounds = 3;
 
-export const askQuestion = (question) => {
+export const randomNumberGenerator = (min, max) => Math.floor(Math.random() * (max - min)) + min;
+
+const askQuestion = (question) => {
   console.log(`Question: ${question}`);
 };
 
-export const compare = (rightAnswer, playerAnswer) => (rightAnswer === playerAnswer);
+const getAnswer = () => readlineSync.question('Your answer: ');
 
-export const maxRounds = 3;
+const compare = (rightAnswer, playerAnswer) => (rightAnswer === playerAnswer);
 
 export const newGame = (QA, description) => {
   console.log('Welcome to the Brain Games!');

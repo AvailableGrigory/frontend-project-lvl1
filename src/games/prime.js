@@ -1,6 +1,4 @@
-import * as gameLogic from '../index.js';
-
-const randomNumberGenerator = (min, max) => Math.floor(Math.random() * (max - min)) + min;
+import { randomNumberGenerator, newGame } from '../index.js';
 
 const isPrime = (number) => {
   if (number < 2) {
@@ -25,7 +23,7 @@ const startGame = () => {
 
   const description = 'Answer "yes" if given number is prime. Otherwise answer "no"';
 
-  gameLogic.newGame(QA, description);
+  newGame(QA, description);
 };
 
 export default startGame;
