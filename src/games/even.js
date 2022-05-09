@@ -1,16 +1,19 @@
-import { randomNumberGenerator, newGame } from '../index.js';
+import gameEngine from '../index.js';
+import randomNumberGenerator from '../randomNumberGenerator.js';
+
+const description = 'Answer "yes" if the number is even, otherwise answer "no".';
+
+const isEven = (number) => (number % 2 === 0);
+
+const generateRound = () => {
+  const question = randomNumberGenerator(0, 101);
+  const answer = isEven(question) ? 'yes' : 'no';
+
+  return [question, answer];
+};
 
 const startGame = () => {
-  const QA = () => {
-    const question = randomNumberGenerator(0, 101);
-    const answer = question % 2 === 0 ? 'yes' : 'no';
-
-    return [question, answer];
-  };
-
-  const description = 'Answer "yes" if the number is even, otherwise answer "no".';
-
-  newGame(QA, description);
+  gameEngine(generateRound, description);
 };
 
 export default startGame;
