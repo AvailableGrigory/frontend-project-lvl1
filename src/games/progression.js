@@ -18,7 +18,7 @@ const startGame = () => {
 
     const answer = `${progression[questionPosition]}`;
     progression[questionPosition] = '..';
-    const question = progression;
+    const question = progression.toString().replaceAll(',', ' ');
 
     return [question, answer];
   };
